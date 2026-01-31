@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart City Command Center</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+
+<header>
+    🏙️ Smart City Command & Control Center
+</header>
+
+<div class="layout">
+
+    <!-- LEFT PANEL -->
+    <aside>
+        <button onclick="showPanel('traffic')">🚦 Traffic</button>
+        <button onclick="showPanel('electricity')">⚡ Electricity</button>
+        <button onclick="showPanel('water')">💧 Water</button>
+        <button onclick="showPanel('safety')">🚺 Women Safety</button>
+        <button onclick="showPanel('news')">📰 City News</button>
+<button onclick="showPanel('connect')">🧑‍🤝‍🧑 Find Someone</button>
+<button onclick="showPanel('recommend')">🌟 Explore & Try</button>
+<button onclick="showPanel('aqi')">🌫️ AQI & Heat Map</button>
+
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div id="map"></div>
+
+        <div id="panel" class="panel"></div>
+    </main>
+
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
